@@ -47,10 +47,10 @@ return array(
 		),
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=xifanshi',
+			'connectionString' => "mysql:host={$_SERVER['SINASRV_DB_HOST']};dbname=itquaner;port=>{$_SERVER['SINASRV_DB_PORT']}",
 			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => 'java',
+			'username' => $_SERVER[SINASRV_DB_USER],
+			'password' => $_SERVER[SINASRV_DB_PASS],
 			'charset' => 'utf8',
 			'tablePrefix' => 'i_',
 		),

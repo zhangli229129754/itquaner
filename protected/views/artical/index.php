@@ -27,7 +27,7 @@
 				<?php } ?>
 				<div class="media-body">
 					<h2 class="media-heading"><?php echo $item->title; ?></h2>  
-					<p><?php echo $item->content->content; ?></p>
+					<p><?php //echo $item->content->content; ?></p>
 					<a class="btn" href="">read more...<i class="icon-chevron-right"></i></a>
 				</div>
 				
